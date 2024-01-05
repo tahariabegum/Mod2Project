@@ -2,14 +2,13 @@ import { useState, useEffect } from 'react'
 
 const key = import.meta.env.VITE_KEY
 
-export default function FindBook() {
+export default function FindBook( {search} ) {
+    const [data, setData] = useState({})
 
-const [data, setData] = useState([])
-
-useEffect (() => {
-
+    useEffect (() => {
+    
     async function findBook() { 
-
+    e.preventDefault()
     try {
     const response = await fetch (`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${key}`)
     const data = await response.json()
@@ -18,7 +17,7 @@ useEffect (() => {
     } catch (err) {
         console.log(err)
     }
-    
+
     }
 
     findBook();

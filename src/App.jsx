@@ -7,11 +7,18 @@ let key = import.meta.env.VITE_KEY
 
 
 function App() {
- 
+
+  const [search, setSearch] = useState ('')
+
+  function handleChange(e) {
+    setSearch(e.target.value)
+  }
 
   return (
     <>
-      <FindBook />
+      <input type = "text" onChange = {handleChange}/>
+      <button onClick = {null}> Search </button>
+      <FindBook search = {search}  />
     </>
   )
 }
