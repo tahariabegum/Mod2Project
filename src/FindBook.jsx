@@ -1,3 +1,5 @@
+import './App.css'
+
 import { useState, useEffect } from 'react'
 
 export default function FindBook( {search} ) {
@@ -24,7 +26,7 @@ export default function FindBook( {search} ) {
     }, [search])
 
 return (
-    <div>
+    <div className='bookdata'>
     {data?.map((items) => (
         <div key = {items.id}> 
             <img src = {items.volumeInfo?.imageLinks?.thumbnail} alt=""/>

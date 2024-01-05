@@ -1,0 +1,45 @@
+form {
+  position: relative;
+  display: inline-block;
+  max-width: 700px;
+  min-width: 500px;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+input{
+  justify-content: center;
+  font-family: Helvetica , sans-serif;
+  border: 1px solid ;
+  font-size: 17px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: black;
+  font-weight: 100;
+  position: relative;
+}
+
+
+button {
+  justify-content: center;
+  background-color: white;
+  border: 1px solid;
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: black;
+  position: relative;
+}
+
+.bookdata {
+  justify-content: center ;
+}
+
