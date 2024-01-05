@@ -11,19 +11,24 @@ function App() {
 
 
   function handleChange(e) {
-    e.preventDefault()
     setSearch(e.target.value)
   }
 
+  
+ 
 
-
+  function handleSubmit(e) {
+    e.preventDefault()
+  }
 
   return (
-    <>
-      <input type = "text" onChange = {handleChange} value = {search} />
-      <button onClick = {() => {}}> Search </button>
+    <div>
+      <form onSubmit = {handleSubmit}>
+        <input type = "text" onChange = {handleChange} value = {search} />
+        <button> Search </button>
+      </form>
       <FindBook search = {search} />
-    </>
+    </div>
   )
 }
 
