@@ -8,17 +8,16 @@ let key = import.meta.env.VITE_KEY
 
 function App() {
   const [search, setSearch] = useState ('')
+  const [findBook, setFindBook] = useState('')
 
 
   function handleChange(e) {
     setSearch(e.target.value)
   }
 
-  
- 
-
   function handleSubmit(e) {
     e.preventDefault()
+    setFindBook(search)
   }
 
   return (
@@ -27,7 +26,7 @@ function App() {
         <input type = "text" onChange = {handleChange} value = {search} />
         <button> Search </button>
       </form>
-      <FindBook search = {search} />
+      <FindBook search = {findBook} />
     </div>
   )
 }
