@@ -28,9 +28,9 @@ return (
     <div>
     {Object.values(data).map((items) => (
         <div key = {items.id}> 
-            <h2> {items.volumeInfo.title}</h2>
-            <h4> {items.volumeInfo.authors}</h4>
-            <p> {items.volumeInfo.description}</p>
+            <h2> {items.volumeInfo?.title}</h2>
+            <h4> {items.volumeInfo?.authors}</h4>
+            <p> {items.volumeInfo?.description}</p>
         </div>
     )
     )}
