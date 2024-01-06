@@ -54,16 +54,30 @@ button {
   justify-content: center;
   align-items: center;
   margin-left: 90px; 
+  margin-top: 0px;
 }
 
-img{
-  height: 300px;
-  width: 300px; 
-}
 
-.bookdata{
+.book-data {
   justify-content: center;
   align-items: center;
-  display: flex;
-  padding: 20px;  
+  flex-direction: column; 
+}
+
+.book-cont {
+  display: flex; 
+  align-items: flex-start;
+  margin-bottom: 20px; 
+  border-bottom: 1px dotted lightgray;
+  padding-bottom: 20px;
+}
+
+.book-img {
+  width: 200px; 
+  margin-right: 25px;
+  margin-top: 30px
+}
+
+.book-det {
+  flex: 1; 
 }
