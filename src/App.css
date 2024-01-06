@@ -55,3 +55,15 @@ button {
   align-items: center;
   margin-left: 90px; 
 }
+
+img{
+  height: 300px;
+  width: 300px; 
+}
+
+.bookdata{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;  
+}

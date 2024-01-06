@@ -26,13 +26,15 @@ export default function FindBook( {search} ) {
     }, [search])
 
 return (
-    <div className='bookdata'>
+    <div className='book-data'>
     {data?.map((items) => (
-        <div key = {items.id}> 
-            <img src = {items.volumeInfo?.imageLinks?.thumbnail} alt=""/>
-            <h2> {items.volumeInfo?.title}</h2>
-            <h4> {items.volumeInfo?.authors}</h4>
-            <p> {items.volumeInfo?.description}</p>
+        <div key = {items.id} className = 'book-cont'> 
+            <img src = {items.volumeInfo?.imageLinks?.thumbnail} alt="" className = 'book-img'/>
+            <div className = 'book-det'>
+                <h2> {items.volumeInfo?.title}</h2>
+                <h4> {items.volumeInfo?.authors}</h4>
+                <p> {items.volumeInfo?.description}</p>
+            </div>
         </div>
     )
     )}
