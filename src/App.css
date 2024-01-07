@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   /* position: fixed; */
-  background-color: black;
+  background-color: burlywood;
   color: white;
   padding: 20px; 
   font-size: 40px;
@@ -39,12 +39,14 @@ body {
 
 form {
   display: flex;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   /* height: calc(100vh-80px); */
-  max-width: 700px; 
-  text-align: center; 
-  padding: 30px 25px; 
+  max-width: 500px; 
+  width: 100%; 
+  padding: 20px; 
+  /* padding: 30px 25px;  */
   border-radius: 40px; 
   margin: 0; 
   /* max-width: 500px; 
@@ -57,9 +59,10 @@ form {
 
 input {
   font-family: Helvetica , sans-serif;
+  flex-grow: 1;
   border: 1px solid ;
   font-size: 17px;
-  width: 100%;
+  width: 90%;
   display: flex;
   box-sizing: border-box;
   padding: 10px 25px;
@@ -72,7 +75,7 @@ input {
 
 button {
   background-color: white;
-  max-width: 200px;
+  max-width: 500px;
   border: 1px solid;
   line-height: 0;
   font-size: 17px;
@@ -92,7 +95,8 @@ button {
 
 
 .book-data {
-  justify-content: center;
+  display: flex; 
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column; 
 }
@@ -103,6 +107,7 @@ button {
   margin-bottom: 20px; 
   border-bottom: 1px dotted lightgray;
   padding-bottom: 20px;
+  width: 100%; 
 }
 
 .book-img {
@@ -115,4 +120,5 @@ button {
 .book-det {
   flex: 1; 
   margin-right: 100px;
+  text-align: left;
 }
