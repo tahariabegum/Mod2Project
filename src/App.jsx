@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import FindBook from './FindBook'
 import Nav from './Nav'
 import Home from './Home'
+import SearchBook from './SearchBook'
 import {Route, Routes} from 'react-router-dom'
 import './App.css'
 
@@ -10,6 +11,7 @@ let key = import.meta.env.VITE_KEY
 
 
 function App() {
+  const[search, setSearch] = useState('')
  
 
   return (
@@ -17,6 +19,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path = '/' element = { < Home />} />
+        <Route path = '/search' element = {<SearchBook />} />
       </Routes>
     </>
   )

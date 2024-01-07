@@ -9,6 +9,9 @@ export default function Nav( {homePage} ) {
             <Link to = '/' >
                <div className = 'home'>Home</div>
             </Link>
+            <Link to = '/search'> 
+                <div className  = 'search'> Search </div>
+            </Link>
         </div>
 
     )
