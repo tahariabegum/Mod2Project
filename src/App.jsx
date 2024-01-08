@@ -11,7 +11,6 @@ let key = import.meta.env.VITE_KEY
 
 
 function App() {
-  const[search, setSearch] = useState('')
  
 
   return (
