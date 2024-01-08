@@ -21,8 +21,9 @@ export default function FindBook( {search} ) {
 
         }
 
-    findBook();
-    
+    if (search) {
+        findBook();
+    }
     }, [search])
 
 return (
