@@ -2,64 +2,26 @@
 body {
   margin: 0;
   padding: 0; 
-  height: 100%; 
-  width: 100%;
-  background-image: url('./bookshelf.jpeg');
 
-  /* display: flex; 
-  justify-content: center; 
-  align-content: center;
-  flex-direction: column; */
+  background-image: url('./bookshelf.png');
 
-}
+} 
 
-/* .bookshelf-img {
-  width: 100%;
-  opacity: 0.6;
-} */
-
-
-/* 
-.home-comp {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; 
-  background-image: url('./bookshelf.jpeg');
-  height: 100vh;
-  background-size: cover;
-  position: relative; 
-  background-repeat:repeat-x;
-  background-position: center;
-  background-attachment: fixed; 
-}
-
-.home-comp::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
-
-.image {
-  position: absolute; 
-  top: 0;
-  left: 0; 
-  width: 100%;
-  height: 100%; 
-  z-index: 0; 
-}
-
-
-.title{
-  font-size: 50px;
+.title {
+  font-size: 100px;
   color: white; 
+  z-index: 2;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Helvetica , sans-serif;
+}
+
+.home-comp {
+  position: relative; 
   z-index: 1;
-} */
+  margin-top: 200px;
+}
 
 .navbar {
   display: flex;
@@ -67,7 +29,7 @@ body {
   /* position: fixed; */
   background-color: burlywood;
   color: white;
-  padding: 20px; 
+  padding: 10px; 
   font-size: 40px;
   top: 0; 
   left: 0; 
@@ -78,14 +40,14 @@ body {
 }
 
 .home {
-  font-size: 15px;
+  font-size: 25px;
   color: black; 
   margin-right: 20px;
 }
 
 
 .search {
-  font-size: 15px;
+  font-size: 25px;
   color: black; 
 }
 
@@ -156,13 +118,16 @@ button {
   /* justify-content: center; */
   align-items: center;
   flex-direction: column; 
+  background-color: white;
+  opacity: 0.6;
+  margin: 20px; 
 }
 
 .book-cont {
   display: flex; 
   align-items: flex-start;
   margin-bottom: 20px; 
-  border-bottom: 1px dotted lightgray;
+  border-bottom: 2px dotted lightgray;
   padding-bottom: 20px;
   width: 100%; 
 }
