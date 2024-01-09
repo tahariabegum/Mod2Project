@@ -28,15 +28,17 @@ export default function FindBook( {search} ) {
 
 return (
     <div className='book-data'>
-    {data?.map((items) => (
-        <div key = {items.id} className = 'book-cont'> 
-            <img src = {items.volumeInfo?.imageLinks?.thumbnail} alt="" className = 'book-img'/>
-            <div className = 'book-det'>
-                <h2> {items.volumeInfo?.title}</h2>
-                <h4> {items.volumeInfo?.authors}</h4>
-                <p> {items.volumeInfo?.description}</p>
+        {data?.map((items) => (
+            <div key = {items.id} className = 'book-cont'> 
+             <img src = {items.volumeInfo?.imageLinks?.thumbnail} alt={items.volumeInfo?.title} className = 'book-img'/>
+                <div className = 'book-det'>
+                    <a href = {items.volumeInfo?.previewLink}>
+                        <h2> {items.volumeInfo?.title}</h2>
+                    </a>
+                    <h4> {items.volumeInfo?.authors}</h4>
+                    <p> {items.volumeInfo?.description}</p>
+                </div>
             </div>
-        </div>
     )
     )}
     </div>
